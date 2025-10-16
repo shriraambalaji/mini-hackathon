@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verify OTP - Rapid Rescue</title>
+  <link rel="stylesheet" href="otp.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon-circle">📞</div>
+      <h1>Rapid Rescue</h1>
+      <p>Emergency Ambulance Service</p>
+    </div>
 
+    <form id="verifyForm">
+      <label for="otp">Enter OTP</label>
+      <input type="text" id="otp" name="otp" placeholder="000000" required />
+
+      <p class="note">OTP sent to phone number <strong>8870832870</strong></p>
+
+      <button type="submit" class="verify-btn" onclick="home()">
+        Verify & Login ➡
+      </button>
+
+      <p class="change-link">
+        <a href="https://rapid-rescue-ui.lovable.app/login">Change Phone Number</a>
+      </p>
+    </form>
+
+    <p class="disclaimer">
+      By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <script src="otp.js"></script>
+</body>
+</html>
