@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapid Rescue</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon-circle">
+        <span class="phone-icon">📞</span>
+      </div>
+      <h1>Rapid Rescue</h1>
+      <p>Emergency Ambulance Service</p>
+    </div>
 
+    <form id="otpForm">
+      <label for="phone">Phone Number</label>
+      <div class="input-group">
+        <span class="input-icon">📱</span>
+        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required />
+      </div>
+      <button type="submit" class="send-btn" onclick="send()">Send OTP</button>
+    </form>
+
+    <p class="disclaimer">
+      By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+    </p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
